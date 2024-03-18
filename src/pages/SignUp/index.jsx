@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { FiMail, FiLock, FiUser } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 
@@ -7,6 +8,7 @@ import { Button } from '../../components/Button'
 import { Container, Form, Background } from './styles'
 
 export function SignUp() {
+  const [] = useState();
   return (
     <Container>
       <Background />
