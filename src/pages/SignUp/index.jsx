@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { FiMail, FiLock, FiUser } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
+import {api} from "../../s"
 
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
@@ -13,7 +14,10 @@ export function SignUp() {
   const [password, setPassword] = useState("");
 
   function handleSignUp() {
-    console.log(name, email, password)
+    if (!name || !email || !password) {
+      return alert("Preencha todos os campos!")
+    }
+
   }
 
   return (
