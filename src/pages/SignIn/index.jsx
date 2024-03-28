@@ -1,21 +1,21 @@
-import { useState } from 'react'
-import { FiMail, FiLock } from 'react-icons/fi'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { FiMail, FiLock } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
-import { useAuth } from '../../hooks/auth'
+import { useAuth } from '../../hooks/auth';
 
-import { Input } from '../../components/Input'
-import { Button } from '../../components/Button'
+import { Input } from '../../components/Input';
+import { Button } from '../../components/Button';
 
-import { Container, Form, Background } from './styles'
+import { Container, Form, Background } from './styles';
 
 export function SignIn() {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const { signIn } = useAuth();
 
   function handleSignIn() {
-    SignIn({ email, password })
+    signIn({ email, password });
   }
 
   return (
@@ -47,5 +47,5 @@ export function SignIn() {
 
       <Background />
     </Container>
-  )
+  );
 }

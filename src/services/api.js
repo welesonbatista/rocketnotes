@@ -5,3 +5,4 @@ export const api = axios.create({
 })
 
 api.get("/users/:id")
+
