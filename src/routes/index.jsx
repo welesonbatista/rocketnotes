@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { useAuth } from '../hooks/auth'
-import { api } from '../services/api'
+
 
 import { AuthRoutes } from "./auth.routes";
 import { AppRoutes } from "./app.routes";
