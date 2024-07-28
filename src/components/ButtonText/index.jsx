@@ -1,10 +1,11 @@
-import { Container } from './styles'
+import { Container } from './styles';
 
-export function ButtonText({ title, isActive = false, ...rest }) {
+// eslint-disable-next-line react/prop-types
+export function ButtonText({ title, isactive, ...rest }) {
   return (
     <Container
       type="button"
-      $isactive={isActive.toString()}
+      isactive={isactive}
       {...rest}
     >
       {title}
